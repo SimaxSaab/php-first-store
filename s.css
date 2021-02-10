@@ -77,11 +77,11 @@ figcaption {
 .success,.error {
   background: chartreuse;
   padding: 10px;
+  margin: 15px 0;
 }
 
 .error {
   background: crimson;
-  margin: 15px 25px;
 }
 
 .wrap-buy {

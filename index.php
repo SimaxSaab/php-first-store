@@ -1,19 +1,6 @@
 <?php
 
-$products = [
-  [
-    'img' => 'img/corkscrew.jpg',
-    'name' => 'Штопор безумный'
-  ],
-  [
-    'img' => 'img/sneakers.jpg',
-    'name' => 'Кеды-самоеды'
-  ],
-  [
-    'img' => 'img/unicorn.jpg',
-    'name' => 'Самка единорога'
-  ],
-]
+include 'products.php';
 
 ?>
 
@@ -31,7 +18,7 @@ $products = [
   <header class="menu">
     <div class="container">
       <ul>
-        <li><a href="index.html">Главная</a></li>
+        <li><a href="/">Главная</a></li>
         <li><a href="about.html">о Нас</a></li>
       </ul>
     </div>
@@ -40,11 +27,11 @@ $products = [
   <div class="container">
     <h1>Каталог</h1>
     <div class="items">
-      <?php foreach($products as $product) { ?>
+      <?php foreach($products as $id => $product) { ?>
         <figure>
           <p><img src="<?=$product['img'];?>" alt="<?=$product['name'];?>"></p>
           <figcaption><?=$product['name'];?></figcaption>
-          <a href="form.html" class="btn">Купить</a>
+          <a href="form.php?id=<?=$id;?>" class="btn">Купить</a>
         </figure>
       <?php } ?>      
     </div>

@@ -34,6 +34,10 @@ img {
   background: #fff;
 }
 
+h1 {
+  margin: 15px 0;
+}
+
 .items {
   display: flex;
 }
@@ -67,4 +71,23 @@ figcaption {
   text-transform: uppercase;
   padding: 15px;
   margin-top: 15px;
+}
+
+
+.success,.error {
+  background: chartreuse;
+  padding: 10px;
+}
+
+.error {
+  background: crimson;
+  margin: 15px 25px;
+}
+
+.wrap-buy {
+  display: flex;
+}
+
+form {
+  margin-left: 25px;
 }

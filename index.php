@@ -1,3 +1,22 @@
+<?php
+
+$products = [
+  [
+    'img' => '',
+    'name' => ''
+  ],
+  [
+    'img' => '',
+    'name' => ''
+  ],
+  [
+    'img' => '',
+    'name' => ''
+  ],
+]
+
+?>
+
 <!DOCTYPE html>
 <html lang="ru">
 
